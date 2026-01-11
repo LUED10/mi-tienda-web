@@ -2,19 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- 🔑 CLAVE PARA CELULAR -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mi Tienda Online</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Bienvenidos a mi tienda</h1>
-    <p>Vendemos productos al mejor precio</p>
+    <header>
+        <h1>Mi Tienda Online</h1>
+        <p>Productos al mejor precio</p>
+    </header>
 
-    <div class="producto">
-        <h2>Zapatillas</h2>
-        <p>Precio: S/ 150</p>
-        <button>Comprar</button>
-    </div>
+    <main class="productos">
 
+        <div class="producto">
+            <h2>Zapatillas</h2>
+            <p class="precio">S/ 150</p>
+            <button onclick="comprar('Zapatillas', 150)">
+                Comprar
+            </button>
+        </div>
+
+        <div class="producto">
+            <h2>Polo deportivo</h2>
+            <p class="precio">S/ 60</p>
+            <button onclick="comprar('Polo deportivo', 60)">
+                Comprar
+            </button>
+        </div>
+
+        <div class="producto">
+            <h2>Mochila</h2>
+            <p class="precio">S/ 90</p>
+            <button onclick="comprar('Mochila', 90)">
+                Comprar
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Mi Tienda Online</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
